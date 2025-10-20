@@ -1,0 +1,18 @@
+spring:
+  # 데이터베이스 관련 설정
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  # H2 데이터베이스 콘솔 설정
+  h2:
+    console:
+      enabled: true
+
+  # JPA (데이터베이스 ORM) 관련 설정
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    # ddl-auto로 테이블을 먼저 생성한 후, data.sql을 실행하도록 순서 조정
+    defer-datasource-initialization: true
