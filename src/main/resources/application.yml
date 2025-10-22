@@ -2,6 +2,7 @@ spring:
   # 데이터베이스 관련 설정
   datasource:
     url: jdbc:h2:mem:testdb
+    username: sa
 
   # H2 데이터베이스 콘솔 설정
   h2:

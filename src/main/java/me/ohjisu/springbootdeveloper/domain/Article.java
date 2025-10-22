@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Article {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 기본키를 자동ㅔ으로 1씩 증가
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 기본키를 자동으로 1씩 증가
     @Column(name = "id", updatable = false)
     private Long id;
 
